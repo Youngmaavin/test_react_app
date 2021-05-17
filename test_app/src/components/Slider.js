@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Arrow from './Arrow';
 
 const Slider = (props) => {
@@ -7,9 +7,6 @@ const Slider = (props) => {
        setArrowData(arrowIndex) 
     }
     console.log(ArrowData)
-    useEffect(()=>{
-        
-    })
     if(!Array.isArray(props.apidata) || props.apidata.length <= 0) {
         return null;
     }
@@ -26,7 +23,7 @@ const Slider = (props) => {
                 {props.apidata.map((data, index) => {
                     return(<div className={index===ArrowData ? 'slide-active' : 'slide'}
                     key = {data.pk}>
-                        {index===ArrowData && (<img src={data.image} />)}
+                        {index===ArrowData && (<img src={data.image} alt={data.title} />)}
                     </div>)
                 })}
             </section>

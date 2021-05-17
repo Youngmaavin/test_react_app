@@ -17,10 +17,10 @@ const Arrow = (props) => {
     }
     if(props.direction==='right')
     {return <div className='right-arrow' onClick={()=>{nextSlide(); SendData()}}>
-        <img src={arrowRight} />
+        <img src={arrowRight} alt='arrow-right' />
     </div>}
      return <div className='left-arrow' onClick={()=>{prevSlide(); SendData()}}>
-         <img src={arrowLeft} />
+         <img src={arrowLeft} alt='arrow-left' />
      </div>
 }
 
