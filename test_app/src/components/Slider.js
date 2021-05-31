@@ -1,24 +1,24 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import Arrow from './Arrow';
+import './Slider.css';
 
 const Slider = (props) => {
     const [ArrowData, setArrowData] = useState(0);
-    const CallbackFunc = (arrowIndex) => {
-       setArrowData(arrowIndex) 
+    const setSlide = (current) => {
+        setArrowData(current);
     }
-    console.log(ArrowData)
     if(!Array.isArray(props.apidata) || props.apidata.length <= 0) {
         return null;
     }
         return(
             <section className='slider'>
                 <Arrow
-                sliderCallback={CallbackFunc}
-                apidata={props.apidata}
+                sliderCallback={setSlide}
+                length={props.apidata.length}
                 direction='right' />
                 <Arrow
-                sliderCallback={CallbackFunc}
-                apidata={props.apidata}
+                sliderCallback={setSlide}
+                length={props.apidata.length}
                 direction='left' />
                 {props.apidata.map((data, index) => {
                     return(<div className={index===ArrowData ? 'slide-active' : 'slide'}
