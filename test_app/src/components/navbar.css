@@ -1,17 +1,8 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-size: 18px;
-}
-
 nav {
     background: #222;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .navbar-main {
@@ -36,7 +27,7 @@ nav {
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
@@ -48,8 +39,6 @@ nav {
 .navbar-item {
     width: 100%;
     text-align: center;
-    color: white;
-    text-decoration: none;
     padding: 0.5rem;
 }
 
@@ -57,22 +46,43 @@ nav {
     background-color: dimgrey;
     border-radius: 4px;
     transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.nav-link {
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
     .navbar-main {
-        position: relative;
+        height: 61px;
+    }
+
+    .navbar-logo {
+        z-index: 2;
+    }
+
+    .navbar-logo img {
+        height: 45px;
+        margin: 5px;
     }
 
     .nav-menu {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 270px;
+        height: 100%;
+        top: 60px;
         position: absolute;
-        top: 100px;
         opacity: 0;
+        transform:translate(0, -100%) ;
         transition: all 0.5s ease;
+        margin-right: 0;
+        gap: 0;
+        z-index: 0;
     }
 
     .nav-menu-active {
@@ -88,13 +98,13 @@ nav {
         padding: 1rem;
         list-style: none;
         width: 100%;
-        display: table;
     }
 
     .navbar-item:hover {
         background-color: dimgrey;
         border-radius: 0;
         transition: all 0.2s ease-out;
+        cursor: pointer;
     }
     
     .navbar-toggle {
@@ -103,12 +113,16 @@ nav {
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 50%);
-        font-size: 1.8rem;
+        transform: translate(-30%);
+        z-index: 2;
+    }
+
+    .fa-bars {
+        font-size: 1.35rem;
     }
 
     .fa-times {
-        font-size: 2rem;
-        transform: translate(-30%);
+        font-size: 1.4rem;
+        transform: translate(-25%);
     }
 }

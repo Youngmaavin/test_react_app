@@ -1,0 +1,51 @@
+.intro {
+    height: 400px;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url(../img/background.jpg);
+    background-position: center -60px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.i-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translateY(100%);
+}
+
+.i-header {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.phone, .fa-phone-alt {
+    font-size: 1.4rem;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        height: 270px;
+        background-position: 0px -100px;
+    }
+
+    .i-content{
+        transform: translateY(75%)
+    }
+    .i-header {
+        font-size: 1.3rem;
+        margin: 10px;
+    }
+    
+    .phone, .fa-phone-alt {
+        font-size: 1rem;
+        margin: 5px;
+    }
+}

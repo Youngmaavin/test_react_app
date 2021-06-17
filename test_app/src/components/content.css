@@ -1,0 +1,86 @@
+.content {
+    width: 100%;
+    background-color:whitesmoke;
+}
+
+.content-header:not(.about-header) {
+    color: white;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+    text-align: center;
+    transform: translateY(180px);
+}
+
+.about-header {
+    font-size: 0.8rem;
+    padding-left: 15px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+.content-text {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    width: 75%;
+    font-size: 0.7rem;
+}
+
+.about-text {
+    padding-top: 5px;
+}
+
+hr {
+    width: 40%;
+    border-top: 4px;
+    border-color: #222;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    transform: translateX(65%);
+}
+
+.content-bg {
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.houses-bg {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url(../img/houses_bg.jpg);
+}
+
+.fishing-bg {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url(../img/fishing_bg.jpg);  
+}
+
+.events-bg {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url(../img/events_bg.jpg);  
+}
+
+@media screen and (min-width: 768px) {
+    .content-header:not(.about-header) {
+        font-size: 1.7rem;
+        transform: translateY(400px);
+    }
+
+    .about-header {
+        font-size: 1.5rem;
+    }
+
+    .content-text {
+        width: 65%;
+        font-size: 1rem;
+    }
+
+    .content-bg {
+        height: 600px;
+    }
+}

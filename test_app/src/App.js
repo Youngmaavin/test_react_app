@@ -24,7 +24,7 @@ class App extends Component {
       return null;
     }
     return (
-      <div className='container-md'>
+      <div className='app'>
       <Header />
       <Content apidata={apidata}/>
       <Footer />
