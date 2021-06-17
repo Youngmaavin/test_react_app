@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { API_URL } from './constants/index';
 import Content from './components/Content';
 import Footer from './components/Footer';
-import Header from './components/Header';
+import Header from './components/Navbar';
 import './App.css';
 
 class App extends Component {

@@ -7,6 +7,7 @@ import Houses from './Houses';
 import Intro from './Intro';
 import Prices from './Prices';
 import Slider from './Slider';
+import Footer from './Footer';
 
 const Content = (props) => {
     return (
@@ -19,6 +20,9 @@ const Content = (props) => {
                 <Events />
                 <Prices />
                 <Slider apidata={props.apidata} />
+                <div className='footer'>
+                    <Footer />
+                </div>
             </div>
         </div>
     )

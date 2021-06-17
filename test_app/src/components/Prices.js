@@ -6,6 +6,7 @@ const Prices = () => {
         <div className='prices'>
         <h2 className='prices-header'>Цены</h2>
             <table className='prices-table'>
+            <tbody>
                 <tr>
                     <th>
                     Дом № 1
@@ -54,6 +55,7 @@ const Prices = () => {
                         3 500 ₽
                     </td>
                 </tr>
+                </tbody>
             </table>
         </div>
     )

@@ -18,7 +18,7 @@ const Navbar = () => {
     }, []);
     return <nav>
         <ul className='navbar-main'>
-            <li className='navbar-logo'><img src={logo} /></li>
+            <li className='navbar-logo'><img src={logo} alt='logo' /></li>
             <li className='navbar-toggle' onClick = {handleClick}>
             <i className={active ? 'fas fa-times':'fas fa-bars'}></i></li>
             <ul className={active ? 'nav-menu-active': 'nav-menu'}>
