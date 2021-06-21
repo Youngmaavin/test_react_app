@@ -20,10 +20,8 @@ const Content = (props) => {
                 <Events />
                 <Prices />
                 <Slider apidata={props.apidata} />
-                <div className='footer'>
-                    <Footer />
-                </div>
             </div>
+            <Footer />
         </div>
     )
 }

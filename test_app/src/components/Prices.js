@@ -3,7 +3,7 @@ import './prices.css'
 
 const Prices = () => {
     return (
-        <div className='prices'>
+        <div className='prices' id='PRICES'>
         <h2 className='prices-header'>Цены</h2>
             <table className='prices-table'>
             <tbody>

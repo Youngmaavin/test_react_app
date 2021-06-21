@@ -27,7 +27,6 @@ class App extends Component {
       <div className='app'>
       <Header />
       <Content apidata={apidata}/>
-      <Footer />
       </div>
     );
   }

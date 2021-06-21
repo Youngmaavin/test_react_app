@@ -23,7 +23,7 @@ export const NavItems = [
     },
     {
         title: 'Цены',
-        url: '#',
+        url: '#PRICES',
         cName: 'nav-links',
     },
     {
